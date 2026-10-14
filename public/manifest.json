@@ -1,0 +1,22 @@
+{
+  "short_name": "Disney App",
+  "name": "Disney Characters App - Juan Diego Triana",
+  "icons": [
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Disney_wordmark.svg",
+      "type": "image/svg+xml",
+      "sizes": "192x192 512x512"
+    },
+    {
+      "src": "/splash_android.png",
+      "type": "image/png",
+      "sizes": "1080x1920",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#001f3f",
+  "theme_color": "#ffd700",
+  "display": "standalone",
+  "orientation": "portrait"
+}

@@ -1,0 +1,86 @@
+.menu-header {
+  background: linear-gradient(90deg, #001f3f 0%, #004080 100%);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.menu-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 12px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.menu-logo {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #ffd700;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: transform 0.2s;
+}
+
+.menu-logo:hover {
+  transform: scale(1.05);
+}
+
+.logo-magia {
+  font-size: 1.6rem;
+}
+
+.menu-nav {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.menu-link {
+  color: #e0e0e0;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 8px 14px;
+  border-radius: 20px;
+  transition: all 0.25s ease;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.menu-link:hover {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.menu-link.activo {
+  color: #001f3f;
+  background-color: #ffd700;
+  font-weight: 700;
+  box-shadow: 0 2px 6px rgba(255, 215, 0, 0.4);
+}
+
+@media (max-width: 768px) {
+  .menu-container {
+    justify-content: center;
+  }
+  
+  .menu-nav {
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .menu-link {
+    font-size: 0.85rem;
+    padding: 6px 10px;
+  }
+}

@@ -1,0 +1,127 @@
+.personajes-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+.personajes-loading {
+  font-size: 1.2rem;
+  color: #666;
+  margin-top: 50px;
+}
+
+.personajes-titulo {
+  font-size: 2.5rem;
+  color: #1a1a1a;
+  margin-bottom: 20px;
+}
+
+/* Filtro */
+.personajes-filtros {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.personajes-filtros label {
+  font-weight: 600;
+  color: #333;
+}
+
+.personajes-select {
+  padding: 8px 16px;
+  font-size: 1rem;
+  border-radius: 20px;
+  border: 2px solid #0066cc;
+  outline: none;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.personajes-conteo {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.personajes-conteo span {
+  font-weight: bold;
+  color: #0066cc;
+}
+
+/* Grid y Tarjetas */
+.personajes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.personaje-card {
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.25s, box-shadow 0.25s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 15px 15px 15px;
+  border: 1px solid #f0f0f0;
+}
+
+.personaje-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+
+.btn-fav {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  font-size: 16px;
+  color: #ccc;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+
+.btn-fav.activo {
+  color: #ffd700;
+  background-color: #001f3f;
+  border-color: #ffd700;
+}
+
+.personaje-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 12px;
+  border: 3px solid #0066cc;
+}
+
+.personaje-body h3 {
+  font-size: 1.1rem;
+  color: #333;
+  margin: 5px 0;
+}
+
+.personaje-body p {
+  font-size: 0.85rem;
+  color: #666;
+  margin: 0;
+}

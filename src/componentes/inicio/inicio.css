@@ -1,0 +1,171 @@
+.inicio-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px 40px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Banner Principal (Hero) */
+.inicio-hero {
+  background: linear-gradient(135deg, #001f3f 0%, #0066cc 100%);
+  border-radius: 20px;
+  margin: 20px 0 40px 0;
+  padding: 50px 20px;
+  color: #ffffff;
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.inicio-titulo {
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+  font-weight: 800;
+  color: #ffd700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.inicio-descripcion {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto 30px auto;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+.inicio-hero-botones {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-primario, .btn-secundario {
+  padding: 12px 28px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+  border: none;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.btn-primario {
+  background-color: #ffd700;
+  color: #001f3f;
+}
+
+.btn-primario:hover {
+  background-color: #ffcc00;
+  transform: translateY(-2px);
+}
+
+.btn-secundario {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  border: 2px solid #ffffff;
+}
+
+.btn-secundario:hover {
+  background-color: #ffffff;
+  color: #0066cc;
+  transform: translateY(-2px);
+}
+
+/* Secciones Generales */
+.inicio-seccion {
+  margin-bottom: 40px;
+}
+
+.seccion-titulo {
+  font-size: 1.8rem;
+  color: #1a1a1a;
+  margin-bottom: 20px;
+  border-left: 5px solid #0066cc;
+  padding-left: 12px;
+}
+
+/* Grid de Accesos Rápidos */
+.inicio-tarjetas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.inicio-tarjeta {
+  background: #ffffff;
+  padding: 25px 20px;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  transition: transform 0.25s, box-shadow 0.25s;
+  text-align: center;
+  border: 1px solid #f0f0f0;
+}
+
+.inicio-tarjeta:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.tarjeta-icono {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.inicio-tarjeta h3 {
+  font-size: 1.2rem;
+  color: #333;
+  margin: 10px 0 5px 0;
+}
+
+.inicio-tarjeta p {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 0;
+}
+
+/* Grid de Destacados */
+.inicio-cargando {
+  text-align: center;
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.inicio-destacados-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 15px;
+}
+
+.destacado-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 12px;
+  text-align: center;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.destacado-card:hover {
+  transform: scale(1.05);
+}
+
+.destacado-img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 8px;
+  border: 3px solid #ffd700;
+}
+
+.destacado-card h4 {
+  font-size: 0.95rem;
+  color: #333;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

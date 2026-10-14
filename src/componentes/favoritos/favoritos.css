@@ -1,0 +1,121 @@
+.favoritos-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+.favoritos-titulo {
+  font-size: 2.5rem;
+  color: #1a1a1a;
+  margin-bottom: 5px;
+}
+
+.favoritos-contador {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.favoritos-contador span {
+  font-weight: bold;
+  color: #e50914;
+}
+
+.favoritos-vacio {
+  background-color: #f8f9fa;
+  padding: 40px 20px;
+  border-radius: 12px;
+  margin-top: 20px;
+}
+
+.favoritos-vacio p {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.favoritos-btn-explorar {
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.favoritos-btn-explorar:hover {
+  background-color: #004999;
+}
+
+.favoritos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.favoritos-card {
+  position: relative;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 15px 15px 15px;
+}
+
+.favoritos-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.favoritos-btn-eliminar {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s;
+}
+
+.favoritos-btn-eliminar:hover {
+  background-color: #cc0000;
+}
+
+.favoritos-imagen {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 12px;
+  border: 3px solid #ffcc00;
+}
+
+.favoritos-info h3 {
+  font-size: 1.1rem;
+  color: #333;
+  margin: 5px 0;
+}
+
+.favoritos-info p {
+  font-size: 0.9rem;
+  color: #777;
+  margin: 0;
+}
