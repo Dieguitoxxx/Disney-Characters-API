@@ -1,24 +1,17 @@
 {
   "short_name": "Disney App",
   "name": "Disney Characters App - Juan Diego Triana",
-  "description": "Aplicación interactiva para explorar personajes y películas de Disney.",
+  "description": "Aplicación interactiva para explorar personajes de Disney.",
   "icons": [
     {
-      "src": "https://cdn-icons-png.flaticon.com/512/732/732205.png",
-      "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "any maskable"
-    },
-    {
-      "src": "https://cdn-icons-png.flaticon.com/512/732/732205.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "any maskable"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Disney_wordmark.svg",
+      "type": "image/svg+xml",
+      "sizes": "192x192 512x512"
     },
     {
       "src": "/splash_android.png",
-      "sizes": "1080x1920",
       "type": "image/png",
+      "sizes": "1080x1920",
       "purpose": "any maskable"
     }
   ],
