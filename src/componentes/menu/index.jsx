@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom';
 import './menu.css';
 
-function Menu() {
+function Menu({ usuarioActivo }) {
   return (
     <header className="menu-header">
       <div className="menu-container">
@@ -10,7 +10,7 @@ function Menu() {
           <span className="logo-magia">✨</span> Disney App
         </NavLink>
 
-        {/* Navegación por las 5 Pestañas */}
+        {/* Navegación por las Pestañas + Ícono de Estado de Logueo */}
         <nav className="menu-nav">
           <NavLink
             to="/"
@@ -52,6 +52,28 @@ function Menu() {
             className={({ isActive }) => (isActive ? 'menu-link activo' : 'menu-link')}
           >
             ℹ️ Info
+          </NavLink>
+
+          {/* Ícono indicando estado de logueo en el menú (0.1) */}
+          <NavLink
+            to="/usuario"
+            className={({ isActive }) =>
+              `${isActive ? 'menu-link activo' : 'menu-link'} ${
+                usuarioActivo ? 'estado-online' : 'estado-offline'
+              }`
+            }
+            title={
+              usuarioActivo
+                ? `Conectado como: ${usuarioActivo.nombre}`
+                : 'Sin sesión activa - Haz clic para iniciar sesión'
+            }
+          >
+            <span className="icono-estado-login">
+              {usuarioActivo ? '🟢 👤' : '🔴 🔒'}
+            </span>
+            <span>
+              {usuarioActivo ? usuarioActivo.nombre.split(' ')[0] : 'Login'}
+            </span>
           </NavLink>
         </nav>
       </div>

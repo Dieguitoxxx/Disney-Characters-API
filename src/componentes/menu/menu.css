@@ -69,6 +69,22 @@
   box-shadow: 0 2px 6px rgba(255, 215, 0, 0.4);
 }
 
+/* Indicadores visuales del estado de logueo en el menú */
+.estado-online {
+  border: 2px solid #4ade80;
+  background-color: rgba(74, 222, 128, 0.15);
+}
+
+.estado-offline {
+  border: 1px dashed rgba(255, 215, 0, 0.6);
+}
+
+.icono-estado-login {
+  font-size: 0.9rem;
+  display: inline-flex;
+  align-items: center;
+}
+
 @media (max-width: 768px) {
   .menu-container {
     justify-content: center;

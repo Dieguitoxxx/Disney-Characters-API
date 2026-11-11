@@ -1,0 +1,210 @@
+.usuario-container {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+  font-family: inherit;
+}
+
+.usuario-header-banner {
+  background: linear-gradient(135deg, #001f3f 0%, #004080 100%);
+  color: #ffffff;
+  border-radius: 16px;
+  padding: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  box-shadow: 0 8px 20px rgba(0, 31, 63, 0.2);
+}
+
+.usuario-header-banner h2 {
+  color: #ffd700;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.sub-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.sub-tab-btn {
+  background: #ffffff;
+  color: #001f3f;
+  border: 2px solid #001f3f;
+  padding: 0.6rem 1.2rem;
+  border-radius: 999px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.sub-tab-btn.activo,
+.sub-tab-btn:hover {
+  background: #ffd700;
+  color: #001f3f;
+  border-color: #ffd700;
+  transform: translateY(-2px);
+}
+
+.card-panel {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  margin-bottom: 2rem;
+}
+
+.card-panel h3 {
+  color: #001f3f;
+  border-left: 4px solid #ffd700;
+  padding-left: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.2rem;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.input-group label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #001f3f;
+}
+
+.input-group input,
+.input-group select {
+  padding: 0.75rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  outline: none;
+}
+
+.input-group input:focus,
+.input-group select:focus {
+  border-color: #001f3f;
+  box-shadow: 0 0 0 2px rgba(255, 215, 0, 0.4);
+}
+
+.btn-primario {
+  background: #ffd700;
+  color: #001f3f;
+  border: none;
+  padding: 0.8rem 1.6rem;
+  border-radius: 999px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.btn-secundario {
+  background: #001f3f;
+  color: #ffffff;
+  border: none;
+  padding: 0.8rem 1.6rem;
+  border-radius: 999px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-peligro {
+  background: #ef4444;
+  color: #ffffff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-editar {
+  background: #0284c7;
+  color: #ffffff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-right: 0.5rem;
+}
+
+.alerta-msg {
+  padding: 0.85rem 1.2rem;
+  border-radius: 10px;
+  margin-bottom: 1.2rem;
+  font-weight: 600;
+  background: #fef9c3;
+  color: #001f3f;
+  border-left: 4px solid #ffd700;
+}
+
+.tabla-responsive {
+  overflow-x: auto;
+}
+
+.tabla-crud {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.tabla-crud th,
+.tabla-crud td {
+  padding: 0.85rem;
+  text-align: left;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.tabla-crud th {
+  background: #001f3f;
+  color: #ffd700;
+}
+
+.san-agustin-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.reliquia-box {
+  background: linear-gradient(145deg, #001f3f, #003366);
+  color: #ffffff;
+  border-radius: 16px;
+  padding: 2rem;
+  text-align: center;
+  border: 2px solid #ffd700;
+}
+
+.reliquia-icono {
+  font-size: 4.5rem;
+  display: inline-block;
+  animation: flotar 3s ease-in-out infinite;
+}
+
+@keyframes flotar {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-10px) rotate(4deg); }
+}
+
+.coordenadas-badge {
+  display: inline-block;
+  background: rgba(255, 215, 0, 0.2);
+  color: #ffd700;
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  margin: 0.5rem 0;
+  border: 1px solid #ffd700;
+}
